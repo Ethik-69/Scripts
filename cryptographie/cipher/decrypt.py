@@ -4,15 +4,11 @@ import sys
 from random import randint
 from string import maketrans
 
-a_dechiffre = 'fbok fbonbck fteeak yae tkrouadhe à od fkbrktuua qoc da ebdh fte zbddo gbke ya gt zbufcgthcbd'
-cle = 't_zya_r_c__gudbfqkehon____'
+crypted_data = 'fbok fbonbck fteeak yae tkrouadhe à od fkbrktuua qoc da ebdh fte zbddo gbke ya gt zbufcgthcbd'
+key = 't_zya_r_c__gudbfqkehon____'
 alphabet="abcdefghijklmnopqrstuvwxyz"
 
-trans = maketrans(cle, alphabet)
-dechiffre = a_dechiffre.translate(trans)
+trans = maketrans(key, alphabet)
+decrypted = crypted_data.translate(trans)
 
-print dechiffre
-
-
-
-
+print decrypted

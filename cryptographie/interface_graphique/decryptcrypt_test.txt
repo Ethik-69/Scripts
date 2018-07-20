@@ -1,4 +1,0 @@
-Gestion des logiciels dans ubuntu
-Linstallation de logiciels sous ubuntu tend la fonctionnalit et la
-convivialit de ce systme dexploitation. Ce chapitre dcrit la faon dont
-ebuntu gre linstallation des logiciels et comment il les maintient  jour.

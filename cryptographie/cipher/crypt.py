@@ -10,11 +10,11 @@ if (len(sys.argv)>1):
 
     # Randomly create a new cipherbet
     cipherbet=""
-    left=alphabet
-    for i in range(0,len(alphabet)):
-        x=randint(0,len(left)-1)
-        cipherbet+=left[x]
-        left=left[:x]+left[x+1:]
+    left = alphabet
+    for i in range(0, len(alphabet)):
+        x = randint(0, len(left)-1)
+        cipherbet += left[x]
+        left = left[:x] + left[x+1:]
 
     # Get input text to translate
     text=sys.argv[1].lower()
@@ -25,7 +25,7 @@ if (len(sys.argv)>1):
     # Replace unused letters in cipherbet with _'s
     for i in cipherbet:
         if i not in text:
-            cipherbet=cipherbet.replace(i,"_")
+            cipherbet = cipherbet.replace(i, "_")
 
     # Print cipherbet (solution) and the text (cryptogram)
     print cipherbet
